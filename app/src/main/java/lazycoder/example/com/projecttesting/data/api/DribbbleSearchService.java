@@ -22,7 +22,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.List;
 
-import io.plaidapp.data.api.dribbble.model.Shot;
+import lazycoder.example.com.projecttesting.data.api.model.Shot;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;

@@ -1,6 +1,24 @@
 
 <resources>
 
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
     <!--<style name="Plaid" parent="Theme.AppCompat.Light.NoActionBar">-->
         <!--&lt;!&ndash;//<item type="attr" name="my_attr">@color/pink</item>&ndash;&gt;-->
         <!--<item name="android:colorPrimary">@color/primary</item>-->

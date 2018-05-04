@@ -23,10 +23,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import io.plaidapp.data.api.dribbble.DribbbleSearchConverter;
-import io.plaidapp.data.api.dribbble.DribbbleSearchService;
-import io.plaidapp.data.api.dribbble.DribbbleService;
-import io.plaidapp.data.prefs.DribbblePrefs;
+
+import lazycoder.example.com.projecttesting.data.api.DribbbleSearchService;
+import lazycoder.example.com.projecttesting.data.api.DribbbleService;
+import lazycoder.example.com.projecttesting.data.api.model.PlaidItem;
+import lazycoder.example.com.projecttesting.data.prefs.DribbblePrefs;
 import retrofit2.Retrofit;
 
 //import io.plaidapp.data.api.designernews.DesignerNewsService;
@@ -146,11 +147,11 @@ public abstract class BaseDataManager<T> implements DataLoadingSubject {
     }
 
     private void createDribbbleSearchApi() {
-        dribbbleSearchApi = new Retrofit.Builder()
-                .baseUrl(DribbbleSearchService.ENDPOINT)
-                .addConverterFactory(new DribbbleSearchConverter.Factory())
-                .build()
-                .create((DribbbleSearchService.class));
+//        dribbbleSearchApi = new Retrofit.Builder()
+//                .baseUrl(DribbbleSearchService.ENDPOINT)
+//                .addConverterFactory(new DribbbleSearchConverter.Factory())
+//                .build()
+//                .create((DribbbleSearchService.class));
     }
 
 //    private void createProductHuntApi() {
